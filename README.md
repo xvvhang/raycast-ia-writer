@@ -1,6 +1,18 @@
+<p align="center">
+    <img width=180 src="https://github.com/xvvhang/raycast-ia-writer/blob/4ef1eba6e0f14fc551cc3733fc5c55b3e37aa752/assets/logo.png">
+</p>
+
 # Raycast iA Writer Extension
 
 Create or search notes in iA Writer with Raycast.
+
+## Screenshots
+
+![Quick Note](https://github.com/xvvhang/raycast-ia-writer/blob/4ef1eba6e0f14fc551cc3733fc5c55b3e37aa752/assets/quick-note.png)
+
+<img width="1000" src="https://github.com/xvvhang/raycast-ia-writer/blob/4ef1eba6e0f14fc551cc3733fc5c55b3e37aa752/assets/quick-note.png" alt="Quick Search Screenshot" />
+
+<img width="1000" src="https://github.com/xvvhang/raycast-ia-writer/blob/4ef1eba6e0f14fc551cc3733fc5c55b3e37aa752/assets/quick-search.png" alt="Quick Search Screenshot" />
 
 ## Feature
 
