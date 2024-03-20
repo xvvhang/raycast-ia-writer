@@ -1,5 +1,5 @@
 <p align="center">
-    ![](./assets/logo.png)
+    <img width=180 src="https://github.com/xvvhang/raycast-ia-writer/blob/4ef1eba6e0f14fc551cc3733fc5c55b3e37aa752/assets/logo.png">
 </p>
 
 # Raycast iA Writer Extension
