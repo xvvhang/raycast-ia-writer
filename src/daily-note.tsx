@@ -4,7 +4,7 @@ import { defaultName } from "./preference";
 import { checkInstallation } from "./utils";
 
 export default async function Command() {
-  checkInstallation();
+  await checkInstallation(true);
   const url = iAWriter({ command: "open", path: defaultName() });
   open(url);
 }

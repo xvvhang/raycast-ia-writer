@@ -48,12 +48,14 @@
     {
       "name": "quick-note",
       "title": "Quick Note",
+      "subtitle": "iA Writer",
       "description": "Create quick notes in library",
       "mode": "view"
     },
     {
       "name": "quick-search",
       "title": "Quick Search",
+      "subtitle": "iA Writer",
       "description": "Open Quick Search with queries",
       "mode": "no-view",
       "arguments": [
