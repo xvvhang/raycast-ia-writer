@@ -1,5 +1,5 @@
-import { authToken } from './preference'
-import childProcess from 'node:child_process';
+import { authToken } from "./preference";
+import childProcess from "node:child_process";
 
 interface openOptions {
   background?: boolean;
@@ -8,26 +8,29 @@ interface openOptions {
 async function open(url: string, options?: openOptions) {
   const args = [];
 
-  if (options?.background) args.push('--background');
-  args.push(url)
+  if (options?.background) args.push("--background");
+  args.push(url);
 
-  const process = childProcess.spawn('open', args);
+  const process = childProcess.spawn("open", args);
 
-  process.unref()
+  process.unref();
 
-  return process
+  return process;
 }
 
-export async function write(value: { name: string, text: string }, callback: (success: Boolean, message?: string) => void) {
+export async function write(
+  value: { name: string; text: string },
+  callback: (success: boolean, message?: string) => void,
+) {
   const token = authToken();
-  if (!token) callback(false, 'Auth Token is unset. Please configure auth token first.')
+  if (!token) callback(false, "Auth Token is unset. Please configure auth token first.");
   try {
     const url = [
       `ia-writer://x-callback-url/write?`,
       `auth-token=${authToken()}&`,
       `path=${value.name}.md&`,
-      `text=${encodeURIComponent(value.text)}`
-    ].join('');
+      `text=${encodeURIComponent(value.text)}`,
+    ].join("");
     await open(url, { background: true });
     if (callback) callback(true);
   } catch (error) {
@@ -36,7 +39,7 @@ export async function write(value: { name: string, text: string }, callback: (su
   }
 }
 
-export async function search(value: string, callback?: (success: Boolean, message?: string) => void) {
+export async function search(value: string, callback?: (success: boolean, message?: string) => void) {
   try {
     const url = `ia-writer://x-callback-url/quick-search?query=${value}`;
     await open(url);
@@ -46,4 +49,3 @@ export async function search(value: string, callback?: (success: Boolean, messag
     else console.error(error);
   }
 }
-

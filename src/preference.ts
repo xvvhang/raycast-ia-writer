@@ -8,6 +8,5 @@ export function authToken() {
 }
 
 export function defaultName() {
-  return preferences.timeBased && preferences.dateFormat ? getTimeStamp(new Date(), preferences.dateFormat) : '';
+  return preferences.timeBased && preferences.dateFormat ? getTimeStamp(new Date(), preferences.dateFormat) : "";
 }
-
