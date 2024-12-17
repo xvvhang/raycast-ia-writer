@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "raycast-ia-writer",
-  "title": "IA Writer",
+  "title": "iA Writer",
   "description": "Create or search notes with Raycast",
   "icon": "logo.png",
   "author": "xvvhang",
